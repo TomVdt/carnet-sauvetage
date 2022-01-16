@@ -1,247 +1,240 @@
 <!doctype html>
 	<!-- Change comment to rebuild github-pages because reasons i guess -->
-<!-- 
-TODO
-https://www.w3schools.com/bootstrap/bootstrap_scrollspy.asp
-Left menu and navigation
-Fade in?
-Format table
-New colors and look
--->
 
 <html>
-<head>
-	<title>Natation - Carnet d'entrainement</title>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<!--<link rel="stylesheet" type="text/css" href="css/style.css">-->
-	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
-	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
-</head>
-<body>
-	<!-- Titre -->
-	<div class="container p-5 my-5 bg-dark text-white rounded">
-		<h1>Carnet d'entrainement - Tom</h1>
-		<p>Année 2021-2022</p>
-	</div>
-	<div class="container">
-		<div class="row">
-			<div class="col-3" id="content">
-				<div class="nav nav-pills flex-column">
-					<a class="nav-link nav-pill" href="#performances">Suivi des séances</a>
-					<a class="nav-link nav-pill" href="#seance1">Séance 1</a>
-					<a class="nav-link nav-pill" href="#seance2">Séance 2</a>
-					<a class="nav-link nav-pill" href="#retour">Retour</a>
+	<head>
+		<title>Natation - Carnet d'entrainement</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<!--<link rel="stylesheet" type="text/css" href="css/style.css">-->
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+	</head>
+	<body>
+		<!-- Titre -->
+		<div class="container p-5 my-5 bg-dark text-white rounded">
+			<h1>Carnet d'entrainement - Tom</h1>
+			<p>Année 2021-2022</p>
+		</div>
+		<div class="container">
+			<div class="row">
+				<div class="col-3">
+					<nav class="sticky-top container-fluid" style="top: 2rem;">
+						<ul class="nav nav-pills flex-column">
+							<li class="nav-item"><a class="nav-link" href="#performances">Suivi des séances</a></li>
+							<li class="nav-item"><a class="nav-link" href="#seance1">Séance 1</a></li>
+							<li class="nav-item"><a class="nav-link" href="#seance2">Séance 2</a></li>
+							<li class="nav-item"><a class="nav-link" href="#retour">Retour</a></li>
+						</ul>
+					</nav>
+				</div>
+				<div class="col-9 scrollspy" data-spy="scroll" data-target="#content" data-offset="0">
+					<!-- Performance -->
+					<section class="bg-light m-2 p-2 rounded" id="performances">
+						<h2 class="p-2">Suivi des séances</h2>
+						<table class="table table-sm table-hover">
+							<thead>
+								<tr>
+									<th rowspan="2" class="col-1">Date</th>
+									<th colspan="4" class="col-4">Parcours (200m)</th>
+									<th colspan="4" class="col-4">Remorquage</th>
+									<th class="col-2">TEMPS TOTAL</th>
+									<th class="col-1">DEGRE</th>
+								</tr>
+								<tr>
+									<th>Obstacles</th>
+									<th>Temps</th>
+									<th>Difficulté</th>
+									<th>Qualité</th>
+									<th>Distance</th>
+									<th>Type</th>
+									<th>Temps</th>
+									<th>Qualité</th>
+									<th>/ 8 pts</th>
+									<th>/ 4 pts</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>21 janvier</td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+								</tr>
+							</tbody>
+						</table>
+					</section>
+
+					<section class="bg-light m-2 p-2 rounded" id="seance1">
+						<h2>Séance 1</h2>
+						<p>ABS</p>
+					</section>
+
+					<section class="bg-light m-2 p-2 rounded" id="seance2">
+						<h2>Séance 2</h2>
+						<h4>Bilan de la séance</h4>
+						<p>bilan a completer</p>
+						<div>
+							<h4>AFL 1</h4>
+							<table class="table table-sm table-hover">
+								<thead>
+									<tr>
+										<th colspan="2">Auto-positionnement / Observation de l'efficacité technique</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Intégration des données du parcours</td>
+										<td>Note</td>
+									</tr>
+									<tr>
+										<td>Franchissement des obstacles</td>
+										<td>Note</td>
+									</tr>
+									<tr>
+										<td>Gestion de l’effort sur le tout le parcours</td>
+										<td>Note</td>
+									</tr>
+									<tr>
+										<td>Plongeon canard</td>
+										<td>Note</td>
+									</tr>
+									<tr>
+										<td>Prise du mannequin</td>
+										<td>Note</td>
+									</tr>
+									<tr>
+										<td>Placement du mannequin</td>
+										<td>Note</td>
+									</tr>
+									<tr>
+										<td>Equilibre horizontal du mannequin</td>
+										<td>Note</td>
+									</tr>
+									<tr>
+										<td>Equilibre horizontal du sauveteur</td>
+										<td>Note</td>
+									</tr>
+									<tr>
+										<td>Voies respiratoires du mannequin</td>
+										<td>Note</td>
+									</tr>
+									<tr>
+										<td>Actions propulsives du remorquage</td>
+										<td>Note</td>
+									</tr>
+									<tr>
+										<td>Distance de remorquage</td>
+										<td>Note</td>
+									</tr>
+									<tr>
+										<td>Virage avec le mannequin</td>
+										<td>Note</td>
+									</tr>
+									<tr>
+										<td>Vitesse de remorquage</td>
+										<td>Note</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+						<div>
+							<h4>AFL 2</h4>
+							<table class="table table-sm table-hover">
+								<thead>
+									<tr>
+										<th class="col-2"></th>
+										<th class="col-4">Prévu</th>
+										<th class="col-3">Réalisé</th>
+										<th class="col-3">Difficultés</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Echauffement</td>
+										<td>250m: 200m avec coulées et reprises aux virages + 50m B jambes dos avec 25m virage 25m</td>
+										<td></td>
+										<td></td>
+									</tr>
+									<tr>
+										<td>Parcours</td>
+										<td>200m crawl calme ou brasse, Niveau D, 30m de remorquage avec manequin adulte</td>
+										<td></td>
+										<td></td>
+									</tr>
+									<tr>
+										<td>Récupération</td>
+										<td>100m dos / brasse</td>
+										<td></td>
+										<td></td>
+									</tr>
+									<tr>
+										<td>Entrainement</td>
+										<td></td>
+										<td></td>
+										<td></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+						<div>
+							<h4>AFL 3</h4>
+							<table class="table table-sm table-hover">
+								<thead>
+									<tr>
+										<th class="col-2"></th>
+										<th class="col-4">Réalisations</th>
+										<th class="col-3">Manquements</th>
+										<th class="col-3">Remédiations</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Observateur</td>
+										<td></td>
+										<td></td>
+										<td></td>
+									</tr>
+									<tr>
+										<td>Contrôleur</td>
+										<td></td>
+										<td></td>
+										<td></td>
+									</tr>
+									<tr>
+										<td>
+											<p>Partenaire d’entraînement</p>
+											<p>Suivi des exercices</p>
+										</td>
+										<td></td>
+										<td></td>
+										<td></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</section>
 				</div>
 			</div>
-			<div class="col-9">
-				<!-- Performance -->
-				<section class="bg-light m-2 p-2" id="performances">
-					<h2 class="p-2">Suivi des séances (AFL 1)</h2>
-					<table class="table table-sm table-hover">
-						<thead>
-							<tr>
-								<th rowspan="2" class="col-1">Date</th>
-								<th colspan="4" class="col-4">Parcours (200m)</th>
-								<th colspan="4" class="col-4">Remorquage</th>
-								<th class="col-2">TEMPS TOTAL</th>
-								<th class="col-1">DEGRE</th>
-							</tr>
-							<tr>
-								<th>Obstacles</th>
-								<th>Temps</th>
-								<th>Difficulté</th>
-								<th>Qualité</th>
-								<th>Distance</th>
-								<th>Type</th>
-								<th>Temps</th>
-								<th>Qualité</th>
-								<th>/ 8 pts</th>
-								<th>/ 4 pts</th>
-							</tr>
-						</thead>
-						<tbody>
-							<tr>
-								<td>21 janvier</td>
-								<td>a</td>
-								<td>b</td>
-								<td>c</td>
-								<td>d</td>
-								<td>e</td>
-								<td>f</td>
-								<td>g</td>
-								<td>h</td>
-								<td>i</td>
-								<td>j</td>
-							</tr>
-						</tbody>
-					</table>
-				</section>
-
-				<section class="bg-light m-2 p-2" id="seance1">
-					<h2>Séance 1</h2>
-					<p>ABS</p>
-				</section>
-
-				<section class="bg-light m-2 p-2" id="seance2">
-					<h2>Séance 2</h2>
-					<h4>Bilan de la séance</h4>
-					<p>bilan</p>
-					<div>
-						<h4>AFL 1</h4>
-						<table class="table table-sm table-hover">
-							<thead>
-								<tr>
-									<th colspan="2">Auto-positionnement / Observation de l'efficacité technique</th>
-								</tr>
-							</thead>
-							<tbody>
-								<tr>
-									<td>Intégration des données du parcours</td>
-									<td>Note</td>
-								</tr>
-								<tr>
-									<td>Franchissement des obstacles</td>
-									<td>Note</td>
-								</tr>
-								<tr>
-									<td>Gestion de l’effort sur le tout le parcours</td>
-									<td>Note</td>
-								</tr>
-								<tr>
-									<td>Plongeon canard</td>
-									<td>Note</td>
-								</tr>
-								<tr>
-									<td>Prise du mannequin</td>
-									<td>Note</td>
-								</tr>
-								<tr>
-									<td>Placement du mannequin</td>
-									<td>Note</td>
-								</tr>
-								<tr>
-									<td>Equilibre horizontal du mannequin</td>
-									<td>Note</td>
-								</tr>
-								<tr>
-									<td>Equilibre horizontal du sauveteur</td>
-									<td>Note</td>
-								</tr>
-								<tr>
-									<td>Voies respiratoires du mannequin</td>
-									<td>Note</td>
-								</tr>
-								<tr>
-									<td>Actions propulsives du remorquage</td>
-									<td>Note</td>
-								</tr>
-								<tr>
-									<td>Distance de remorquage</td>
-									<td>Note</td>
-								</tr>
-								<tr>
-									<td>Virage avec le mannequin</td>
-									<td>Note</td>
-								</tr>
-								<tr>
-									<td>Vitesse de remorquage</td>
-									<td>Note</td>
-								</tr>
-							</tbody>
-						</table>
+		</div>
+		<!-- Retour -->
+		<div class="container p-2" id="retour">
+			<div class="form-floating">
+				<form action="https://formspree.io/f/mnqlwyvw" method="POST">
+					<label class="fs-3 m-2" for="message">Votre retour</label>
+					<textarea class="form-control m-2" name="message" id="message" placeholder="Tapez votre message..." required=""></textarea>
+					<div class="d-grid">
+						<button class="btn btn-primary m-2" type="submit">Envoyer</button>
 					</div>
-					<div>
-						<h4>AFL 2</h4>
-						<table class="table table-sm table-hover">
-							<thead>
-								<tr>
-									<th class="col-2"></th>
-									<th class="col-4">Prévu</th>
-									<th class="col-3">Réalisé</th>
-									<th class="col-3">Difficultés</th>
-								</tr>
-							</thead>
-							<tbody>
-								<tr>
-									<td>Echauffement</td>
-									<td>250m: 200m avec coulées et reprises aux virages + 50m B jambes dos avec 25m virage 25m</td>
-									<td></td>
-									<td></td>
-								</tr>
-								<tr>
-									<td>Parcours</td>
-									<td></td>
-									<td></td>
-									<td></td>
-								</tr>
-								<tr>
-									<td>Récupération</td>
-									<td></td>
-									<td></td>
-									<td></td>
-								</tr>
-								<tr>
-									<td>Entrainement</td>
-									<td></td>
-									<td></td>
-									<td></td>
-								</tr>
-							</tbody>
-						</table>
-					</div>
-					<div>
-						<h4>AFL 3</h4>
-						<table class="table table-sm table-hover">
-							<thead>
-								<tr>
-									<th class="col-2"></th>
-									<th class="col-4">Réalisations</th>
-									<th class="col-3">Manquements</th>
-									<th class="col-3">Remédiations</th>
-								</tr>
-							</thead>
-							<tbody>
-								<tr>
-									<td>Observateur</td>
-									<td></td>
-									<td></td>
-									<td></td>
-								</tr>
-								<tr>
-									<td>Contrôleur</td>
-									<td></td>
-									<td></td>
-									<td></td>
-								</tr>
-								<tr>
-									<td>
-										<p>Partenaire d’entraînement</p>
-										<p>Suivi des exercices</p>
-									</td>
-									<td></td>
-									<td></td>
-									<td></td>
-								</tr>
-							</tbody>
-						</table>
-					</div>
-				</section>
+				</form>
 			</div>
 		</div>
-	</div>
-	<!-- Retour -->
-	<div class="container p-2" id="retour">
-		<div class="form-floating">
-			<form action="https://formspree.io/f/mnqlwyvw" method="POST">
-				<label class="fs-3 m-2" for="message">Votre retour</label>
-				<textarea class="form-control m-2" name="message" id="message" placeholder="Tapez votre message..." required=""></textarea>
-				<div class="d-grid">
-					<button class="btn btn-primary m-2" type="submit">Envoyer</button>
-				</div>
-			</form>
-		</div>
-	</div>
-	<div class="container-fluid" style="height: 10px;"></div>
-</body>
+	</body>
 </html>
